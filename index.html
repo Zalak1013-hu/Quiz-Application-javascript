@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="vh-100 position-relative">
+      <div
+        id="start-section"
+        class="position-absolute top-50 start-50 translate-middle"
+        style="width: 400px"
+      >
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="mb-4">JavaScript Exam</h3>
+            <button class="btn btn-primary" onclick="handleStartQuiz()">
+              Start Exam
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="quiz"
+        class="d-none position-absolute top-50 start-50 translate-middle"
+        style="width: 600px"
+      >
+        <div class="card">
+          <div class="card-header">
+            <div class="text-end">
+              <p class="timer">
+                <span id="min">30</span>:<span id="sec">00</span>
+              </p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h4 class="mb-4 quiz-qus"></h4>
+            <ul class="quiz-options list-unstyled"></ul>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-primary">Prev</button>
+              <button class="btn btn-primary" onclick="handleNextQus()">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
